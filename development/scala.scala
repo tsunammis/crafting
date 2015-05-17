@@ -1,3 +1,9 @@
+// Mutable variable
+var myVar :String
+
+// Immutable variable
+val myVar :String
+
 // pattern-matching
 def toYesOrNo(choice: Int): String = choice match {
   case 1 | 2 | 3 => "yes"

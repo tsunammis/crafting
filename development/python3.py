@@ -1,4 +1,6 @@
 """
+Diff between Python2 and Python3 -> http://spartanideas.msu.edu/2014/06/01/the-key-differences-between-python-2-7-x-and-python-3-x-with-examples/
+
 Package manager:
   - pip (more supported than setuptools)
   - setuptools (Old)
