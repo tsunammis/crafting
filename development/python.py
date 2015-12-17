@@ -1,6 +1,9 @@
 """
 High quality resources
     - https://github.com/vinta/awesome-python
+    - Manage CLI -> http://plumbum.readthedocs.org/en/latest/
+    - Create tasks -> http://www.pyinvoke.org/
+    - https://automatetheboringstuff.com/
 
 
 PEP 8 is the de-facto code style guide for Python.

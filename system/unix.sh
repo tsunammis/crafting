@@ -15,3 +15,16 @@ du -h --max-depth=1 | sort -hr
 
 # Free space available
 df -h .
+
+# Get last dirname of directory
+ls -td -- */ | head -n 1
+
+# Get last dirname of directory without slash at the end
+ls -td -- */ | head -n 1 | cut -d'/' -f1
+
+# Get last modified file
+ls -tr | tail -n 1
+
+# Generate certificat
+# https://wiki.gandi.net/en/ssl/csr#generating_your_csr
+openssl req -nodes -newkey rsa:2048 -sha256 -keyout myserver.key -out server.csr
