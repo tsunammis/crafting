@@ -1,3 +1,6 @@
+# View available disk devices and their mount points
+lsblk
+
 # Disk space left
 df -H
 
