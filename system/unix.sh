@@ -31,3 +31,16 @@ ls -tr | tail -n 1
 # Generate certificat
 # https://wiki.gandi.net/en/ssl/csr#generating_your_csr
 openssl req -nodes -newkey rsa:2048 -sha256 -keyout myserver.key -out server.csr
+
+# Create partition on unix
+# http://superuser.com/questions/643765/creating-ext4-partition-from-console
+  fdisk /dev/vdb
+  > n
+  > p
+  > w # write change
+
+  # Format partition to ext4
+  mkfs.ext4 /dev/vdb1
+
+  # List partition
+  lsblk -o name,mountpoint,label,size,uuid
